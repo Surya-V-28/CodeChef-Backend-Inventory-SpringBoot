@@ -5,9 +5,9 @@ spring:
   application:
     name: MoviesService
   datasource:
-    username: root
-    password: Surya@Sql231
-    url: jdbc:mysql://localhost:3306/movies
+    username: surya
+    password: surya231
+    url: jdbc:mysql://mysql-container:3306/moviesdb
   jpa:
     hibernate:
       ddl-auto: update
