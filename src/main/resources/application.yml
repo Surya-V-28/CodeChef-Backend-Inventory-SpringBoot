@@ -1,0 +1,46 @@
+
+spring:
+  cache:
+    type: simple
+  application:
+    name: MoviesService
+  datasource:
+    username: root
+    password: Surya@Sql231
+    url: jdbc:mysql://localhost:3306/movies
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "startup.work.231@gmail.com"
+    password: "sbza cbcd hrxr jlfx"
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+base:
+  url: "http://localhost:8081"
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:9786/eureka/
+
+project:
+  poster: posters/
+  videos: videos/
+
+
